@@ -1,0 +1,158 @@
+/*** STYLESHEET FOR HALLOWEEN****/
+/*** No va a ser responsive porque necesito que se vea aunque sea con scrool
+para darle interactividad ****/
+
+@font-face {
+    font-family:'Letra Halloween' ;
+    src: url("../fonts/KingthingsWidow.ttf");
+}
+
+body{
+    background-color: rgb(29, 13, 25);
+    font-family:'Letra Halloween';
+    color: rgb(214, 139, 0);
+}
+
+#container{background-image: url("../imagenes/fondo.jpg");
+            width: 1920px; /*fijo el ancho como la imagen*/
+            height: 879px; /*fijo  el alto como el de la imagen*/
+            margin: auto;
+            position: relative;/*el container se mueve por la pantalla no esta fijo y lo que se fije dentro del container, la posicion es absoluta*/
+}
+
+#p1{
+    font-size: 4em;
+    text-shadow: 5px 5px 5px rgb(29, 13, 25);
+    position: absolute;/*se fija de esta manera al div container como una chincheta en el container*/
+    top: 0.5px;
+    left: 380px;
+}
+
+#titulo1{
+    position: absolute;
+    width: 850px;
+    top:80px;
+    left:330px;
+    height: 100px;
+    /*border: red solid 5px;*/
+}
+
+#araña{
+    position: absolute;
+    width: 290px;
+    height: 200px;
+    top:140px;
+    left:375px;
+    visibility: hidden;
+}
+
+
+
+
+/**Texto e Imagen fantasma en la purta colocada en la casa a la izquierda de la imagen**/
+#p2{
+    position: absolute;
+    top:300px;
+    left:990px;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px rgb(29, 13, 25);
+}
+
+#fantasma{
+    position: absolute;
+    top:398px;
+    left:1150px;
+    width: 150px;
+    visibility: hidden;
+}
+
+#puerta{
+    position: absolute;
+    width: 100px;
+    height: 150px;
+   /* border: 2px solid white;/*el borde es solo para que me valga de guia*/
+    top:380px;
+    left:1190px;
+}
+
+/**Texto e Imagen "Carafea" en el arbol colocado en la derecha de la imagen**/
+#p3{
+    
+    position: absolute;
+    top:200px;
+    left:100px;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px rgb(29, 13, 25);
+}
+
+#carafea{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top:300px;
+    left:100px;
+    visibility: hidden;
+}
+
+#arbol{
+    position: absolute;
+    width: 150px;
+    top:280px;
+    left:100px;
+    height: 150px;
+    /*border: red solid 5px;*/
+    
+}
+
+/**Imagen fantasma en la purta colocada en la casa de la izquierda de la imagen**/
+#p4{
+    position: absolute;
+    top:300px;
+    left:400px;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px rgb(29, 13, 25);
+}
+
+#farola{
+    position: absolute;
+    width: 280px;
+    top:290px;
+    left:500px;
+    height: 300px;
+    /*border: red solid 5px;*/
+}
+
+#esqueletoColgado{
+    position: absolute;
+    width: 100px;
+    top:285px;
+    left:800px;
+    visibility: hidden;
+}
+
+/**Imagen mano en el suelo pidiendo que te adentres en el bosque**/
+
+#p5{
+    font-size: 2em;
+    text-shadow: 5px 5px 5px rgb(29, 13, 25);
+    position: absolute;/*se fija de esta manera al div container como una chincheta en el container*/
+    top: 500px;
+    left: 500px;
+}
+
+#suelo{
+    position: absolute;
+    width: 480px;
+    top:590px;
+    left:500px;
+    height: 100px;
+    /*border: red solid 5px;*/
+}
+
+#mano{
+    position: absolute;
+    width: 300px;
+    top:560px;
+    left:600px;
+    visibility: hidden;
+}

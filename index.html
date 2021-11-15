@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="./style/halloween.css">
+    <script src="./javaScript/halloween.js"></script>
+</head>
+<body onload="sonar('sonidoBruja')">
+    <!--el sonido lo saco FUERA del container porque no se va a ver los controles-->
+    <audio id="sonidoBruja">
+      <source src="./sounds/sonidoBruja.mp3">
+    </audio>
+    <audio id="sonidoaraña">
+      <source src="./sounds/sonidoaraña.mp3">
+    </audio>
+    <audio id="sonidoDemonio">
+        <source src="./sounds/sonidoDemonio.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="sonidocarafea">
+        <source src="./sounds/sonidocarafea.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="sonidoesqueletocolgado">
+        <source src="./sounds/sonidoesqueletocolgado.mp3">
+      </audio>
+      <audio id="sonidomano">
+        <source src="./sounds/sonidomano.mp3">
+      </audio>
+    <!--El layout basico incluye un container-->
+    <!-- Esta paguina NO va a ser responsive-->
+    <!-- No va a ser responsive porque necesito que se vea aunque sea con scrool
+para darle interactividad -->
+    <div id="container">
+
+    <!--Araña cayendo del titulo -->
+        <p id="p1">Scary Halloween Party</p>
+        <img id="araña" src="./imagenes/araña.gif" alt="Araña">
+        <div id="titulo1" onmouseover="mostrar('araña');sonar('sonidoaraña')"
+                          onmouseout="ocultar('araña');parar('sonidoaraña')"></div>
+      
+    
+    <!--efecto puerta de la casa imagen fantasma sonido demonio -->
+        <p id="p2">Don´t knock on the door ...</p>
+        <img id="fantasma" src="./imagenes/fantasma.gif" alt="fantasma">
+        <!--Creo un div vacio para definir el rectangulo sensible-->
+        <div id="puerta"onmouseover="mostrar('fantasma');sonar('sonidoDemonio')"
+                        onmouseout="ocultar('fantasma');parar('sonidoDemonio')"></div>
+    
+    <!--Imagen en arbol sonido carafea-->
+        <p id="p3"> If you lean ...</p>
+        <img id="carafea" src="./imagenes/carafea1.gif" alt="Cara Fea">
+        <div id="arbol" onmouseover="mostrar('carafea');sonar('sonidocarafea')"
+                        onmouseout="ocultar('carafea');parar('sonidocarafea')"></div>
+
+    <!--imagen esqueleto--> 
+        <p id="p4">You touch my hand?</p>
+        <img id="esqueletoColgado" src="./imagenes/esqueletoColgado.gif" alt="esqueletoColgado">
+        <div id="farola" onclick="mostrar('esqueletoColgado');sonar('sonidoesqueletocolgado')"
+                         onmouseout="ocultar('esqueletoColgado');parar('sonidoesqueletocolgado')" ></div>
+
+    <!-- Mano para que empieces el recorrido -->
+    <p id="p5">Come .. go into the forest</p>
+        <img id="mano" src="./imagenes/mano.gif" alt="mano">
+        <div id="suelo" onmouseout="mostrar('mano');sonar('sonidomano')"
+                        onmouseout="ocultar('mano');parar('sonidomano')" ></div>
+      </div>
+    
+</body>
+</html>
